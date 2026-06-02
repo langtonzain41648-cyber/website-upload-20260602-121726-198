@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索影片 - 高清国产影片片库</title>
+  <meta name="description" content="高清国产影片搜索页面，可按片名、年份、地区、类型和标签查找影片。">
+  <meta name="keywords" content="搜索影片,影片搜索,高清国产影片,国产影片,影片片库,高清影片,热门影片,精选内容,在线观看">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="高清国产影片">
+      <span class="brand-mark">▶</span>
+      <span class="brand-text">
+        <strong>高清国产影片</strong>
+        <small>高清片库 · 在线观看</small>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a class="nav-link " href="index.html">首页</a>
+      <a class="nav-link " href="categories.html">分类</a>
+          <a class="nav-link " href="categories/nian-du-xin-pian.html">新片</a>
+          <a class="nav-link " href="categories/gao-fen-re-bo.html">热播</a>
+          <a class="nav-link " href="categories/juqing-jingxuan.html">剧情</a>
+          <a class="nav-link " href="categories/xuanyi-fanzui.html">悬疑</a>
+          <a class="nav-link " href="categories/xiju-jiating.html">喜剧</a>
+          <a class="nav-link " href="categories/aiqing-qingchun.html">爱情</a>
+      <a class="nav-link " href="rankings.html">热播榜</a>
+      <a class="nav-link " href="about.html">关于</a>
+    </nav>
+    <form class="header-search" action="search.html" method="get">
+      <label class="sr-only" for="header-search-search">搜索影片</label>
+      <input id="header-search-search" name="q" type="search" placeholder="搜索影片、类型、地区" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="打开导航" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Search</span>
+    <h1>搜索影片</h1>
+    <p>输入片名、类型、地区、年份或标签，快速筛选片库内容。</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <form class="search-panel" action="search.html" method="get" data-search-form>
+      <label for="search-input">关键词</label>
+      <div>
+        <input id="search-input" name="q" type="search" placeholder="例如：悬疑、2025、日本、动作" autocomplete="off" data-search-input>
+        <button type="submit">搜索</button>
+      </div>
+    </form>
+    <div class="search-summary" data-search-summary>请输入关键词开始搜索。</div>
+    <div class="movie-grid" data-search-results></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section>
+      <div class="footer-brand">
+        <span class="brand-mark">▶</span>
+        <strong>高清国产影片</strong>
+      </div>
+      <p>围绕高清国产影片整理热门片库、精选合集和分类内容，适合浏览国产影片页面。</p>
+      <p class="footer-note">精选内容、清晰分类、流畅播放，适合电脑与手机浏览。</p>
+    </section>
+    <section>
+      <h2>快速入口</h2>
+      <ul>
+        <li><a href="index.html">首页推荐</a></li>
+        <li><a href="categories.html">分类总览</a></li>
+        <li><a href="rankings.html">热播榜</a></li>
+        <li><a href="search.html">搜索影片</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>分类导航</h2>
+      <ul class="footer-cats">
+          <li><a href="categories/nian-du-xin-pian.html">年度新片</a></li>
+          <li><a href="categories/gao-fen-re-bo.html">高分热播</a></li>
+          <li><a href="categories/juqing-jingxuan.html">剧情精选</a></li>
+          <li><a href="categories/xuanyi-fanzui.html">悬疑犯罪</a></li>
+          <li><a href="categories/xiju-jiating.html">喜剧家庭</a></li>
+          <li><a href="categories/aiqing-qingchun.html">爱情青春</a></li>
+          <li><a href="categories/dongzuo-maoxian.html">动作冒险</a></li>
+          <li><a href="categories/kehuan-qihuan.html">科幻奇幻</a></li>
+          <li><a href="categories/jingsong-kongbu.html">惊悚恐怖</a></li>
+          <li><a href="categories/jingdian-pianku.html">经典片库</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>浏览提示</h2>
+      <p>详情页提供影片介绍、影评赏析、标签与相关推荐，可从分类页或热播榜继续浏览。</p>
+      <button class="back-top" type="button" data-back-top>返回顶部</button>
+    </section>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 高清国产影片. All Rights Reserved.</p>
+  </div>
+</footer>
+<script src="assets/search-index.js"></script>
+<script src="assets/app.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片搜索-高清影片合集</title>
+    <meta name="description" content="通过片名、题材、地区和年份搜索最新影片合集与高清影片片库内容。">
+    <meta name="keywords" content="最新影片合集,最新影片,影片片库,高清影片,热门影片,影片更新,精选内容,影片搜索,片库搜索">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script src="./assets/site.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="./index.html" aria-label="高清影片合集">
+            <span class="logo-mark">▶</span>
+            <span class="logo-copy">
+                <strong>高清影片合集</strong>
+                <small>高清影视 · 热门片库</small>
+            </span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+            <a class="nav-link" href="./index.html">首页</a><a class="nav-link" href="./categories.html">分类</a><a class="nav-link" href="./archive.html">片库</a><a class="nav-link" href="./ranking.html">排行榜</a>
+        </nav>
+        <form class="header-search" action="./search.html" method="get" data-search-form>
+            <input type="search" name="q" aria-label="搜索影片" placeholder="搜索影片、题材、地区">
+            <button type="submit">搜索</button>
+        </form>
+        <button class="mobile-toggle" type="button" aria-label="展开导航" data-mobile-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-nav" data-mobile-nav>
+        <form class="mobile-search" action="./search.html" method="get" data-search-form>
+            <input type="search" name="q" aria-label="搜索影片" placeholder="搜索影片、题材、地区">
+            <button type="submit">搜索</button>
+        </form>
+        <nav aria-label="移动导航">
+            <a class="mobile-link" href="./index.html">首页</a><a class="mobile-link" href="./categories.html">分类</a><a class="mobile-link" href="./archive.html">片库</a><a class="mobile-link" href="./ranking.html">排行榜</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="page-hero small-hero">
+        <div class="container">
+            <nav class="breadcrumbs"><a href="./index.html">首页</a><span>搜索</span></nav>
+            <h1>影片搜索</h1>
+            <p>输入片名、题材、地区或年份，快速查找影片内容。</p>
+            <form class="page-filter search-page-form" action="./search.html" method="get">
+                <input type="search" name="q" placeholder="搜索影片、题材、地区" data-search-page-input>
+                <button class="button button-primary" type="submit">搜索</button>
+            </form>
+        </div>
+    </section>
+    <section class="section section-white">
+        <div class="container">
+            <div class="search-title" data-search-title></div>
+            <div class="movie-grid archive-grid" data-search-results></div>
+        </div>
+    </section>
+</main>
+<script src="./assets/search-index.js"></script>
+<script src="./assets/search.js"></script>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <div class="footer-brand">
+                <span class="logo-mark">▶</span>
+                <strong>高清影片合集</strong>
+            </div>
+            <p>整理最新影片合集页面，展示近期更新的多类型影片内容，适合按题材、地区和热度查看片库。</p>
+        </div>
+        <div>
+            <h2>热门入口</h2>
+            <div class="footer-links">
+                <a href="./index.html">首页推荐</a>
+                <a href="./categories.html">分类浏览</a>
+                <a href="./archive.html">全部片库</a>
+                <a href="./ranking.html">热度排行</a>
+            </div>
+        </div>
+        <div>
+            <h2>精选分类</h2>
+            <div class="footer-links">
+                <a href="./category-latest.html">最新热映</a><a href="./category-drama.html">剧情精选</a><a href="./category-action.html">动作冒险</a><a href="./category-comedy.html">喜剧合家欢</a><a href="./category-romance.html">爱情文艺</a><a href="./category-suspense.html">悬疑惊悚</a><a href="./category-fantasy.html">奇幻科幻</a><a href="./category-family.html">家庭伦理</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 高清影片合集</span>
+    </div>
+</footer>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
